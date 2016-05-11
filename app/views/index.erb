@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+
+<% all_senators.each do |senator| %>
+
+<h3><%= senator.name %> </h3>
+<ul>
+  <li>State: <%= senator.state %></li>
+  <li>Party Affiliation: <%= senator.party %></li>
+  <li>Address: <%= senator.address %></li>
+  <li>Phone Number: <%= senator.phone_number %></li>
+  <li><a href="<%= senator.web_page %>">Website</a></li>
+  <li><a href="<%= senator.contact_link %>">Contact Link</a></li>
+</ul>
+</body>
+
+<% end %>
+
+</html>
